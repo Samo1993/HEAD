@@ -16,16 +16,41 @@
 
 <body>
     <form>
-        <label for="email">E-mail: <abbr title="required">*</abbr></label>
-        <input type="text" name="email" placeholder="Insert your E-mail here">
-        <label for="password">Password: <abbr title="required">*</abbr></label>
-        <input type="text" name="password" placeholder="Insert your Password here">
-        <label for="comp_name">Name and Last name: <abbr title="required">*</abbr></label>
-        <input type="text" name="comp_name" placeholder="Insert your complete Name here">
-        <label for="date_birth">Date of Birthday <abbr title="required">*</abbr></label>
-        <input type="date" name="date_birth">
-        <label for="t_number">Telephone Number: <abbr title="required">*</abbr></label>
-        <input type="text" name="t_number" placeholder="Insert your Telephone here">
+        <ul>
+            <label for="email">E-mail: <abbr title="required">*</abbr></label>
+            <input type="text" name="email" placeholder="Insert your E-mail here">
+            <label for="password">Password: <abbr title="required">*</abbr></label>
+            <input type="text" name="password" placeholder="Insert your Password here">
+            <label for="comp_name">Name and Last name: <abbr title="required">*</abbr></label>
+            <input type="text" name="comp_name" placeholder="Insert your complete Name here">
+            <label for="date_birth">Date of Birthday <abbr title="required">*</abbr></label>
+            <input type="date" name="date_birth">
+            <label for="t_number">Telephone Number: <abbr title="required">*</abbr></label>
+            <input type="text" name="t_number" placeholder="Insert your Telephone here">
+        </ul>
+        <ul>
+            <label for="favorite_plan">Choose your favorite plans</label>
+            <select name="favorite_plan" id="favorite_plan">
+                <option value="free_plan">Free plan</option>
+                <option valeu="platinum_plan">Platinum plan</option>
+                <option value="gold_plan">Gold plan</option>
+            </select>
+            <fieldset>
+                <legend>Check this box for Pro plan</legend>
+                <input type="checkbox" name="remember_plan" value="remembered">
+                <label for="remember_plan">Pro plan</label>
+            </fieldset>
+        </ul>
+        <ul>
+            <label for="cc_number">Credit Card Number: <abbr title="required">*</abbr></label>
+            <input type="text" name="cc_number" placeholder="Insert your Credit Number here">
+            <label for="cvc">CVC: <abbr title="required">*</abbr></label>
+            <input type="text" name="cvc">
+            <label for="exp_date">Expiration date: <abbr title="required">*</abbr></label>
+            <input type="date" name="exp_date">
+            <label for="bill_add">Billing Address: <abbr title="required">*</abbr></label>
+            <input type="text" name="bill_add">
+        </ul>
         <button>Submit</button>
     </form>
 </body>
